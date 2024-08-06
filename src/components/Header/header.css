@@ -1,0 +1,47 @@
+
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    background-color: #2a2b30;
+    padding: 4px 10px;
+    border-radius: 8px;
+    gap: 5px;
+    width: 450px;
+}
+
+.search-container input {
+    width: 100%;
+    max-width: 500px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: transparent;
+}
+
+
+.search-container input:hover {
+
+    border: none;
+    outline: none;
+    color: white;
+    background-color: transparent;
+}
+
+
+.profilePic
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 8px;
+    cursor: pointer;
+}

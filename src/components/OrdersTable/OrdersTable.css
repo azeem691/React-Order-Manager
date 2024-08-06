@@ -1,0 +1,34 @@
+.avatar-sm {
+    width: 2rem;
+    height: 2rem;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+}
+
+
+
+img, svg {
+    vertical-align: middle;
+}
+
+.table-container{
+    background-color:  #202028;
+    padding: 24px;
+}
+
+
+
+.table {
+    --bs-table-color:white;
+    --bs-table-bg: #202028;
+    --bs-table-hover-color: #ffffff;
+    --bs-table-hover-bg: rgba(51, 51, 51, 0.7);
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    vertical-align: middle;
+    border-color: #5a5a5a;
+    
+}

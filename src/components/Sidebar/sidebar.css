@@ -1,0 +1,21 @@
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  width: 75px;
+  height: calc(100vh - 60px);
+  padding: 16px 0;
+  position: fixed; 
+  top: 60px;
+  left: 0; 
+}
+
+.fa-icon {
+border-left: 3px solid transparent;
+}
+
+.fa-icon:hover,
+.active {
+color: #7294ff;
+border-left: 3px solid #7294ff;
+}

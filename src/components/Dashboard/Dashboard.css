@@ -1,0 +1,10 @@
+.dashboard-container .row {
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard-container .row > div {
+      margin-bottom: 15px;
+    }
+  }
+  
