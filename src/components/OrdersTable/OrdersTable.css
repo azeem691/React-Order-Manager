@@ -1,34 +1,48 @@
-.avatar-sm {
-    width: 2rem;
-    height: 2rem;
+.table-container {
+  background-color: #202028;
+  padding: 24px;
+  overflow-x: auto;
 }
-
-.rounded-circle {
-    border-radius: 50%;
-}
-
-
-
-img, svg {
-    vertical-align: middle;
-}
-
-.table-container{
-    background-color:  #202028;
-    padding: 24px;
-}
-
-
 
 .table {
-    --bs-table-color:white;
-    --bs-table-bg: #202028;
-    --bs-table-hover-color: #ffffff;
-    --bs-table-hover-bg: rgba(51, 51, 51, 0.7);
-    width: 100%;
-    margin-bottom: 1rem;
-    color: #ffffff;
-    vertical-align: middle;
-    border-color: #5a5a5a;
-    
+  --bs-table-color: white;
+  --bs-table-bg: #202028;
+  --bs-table-hover-color: #ffffff;
+  --bs-table-hover-bg: rgba(51, 51, 51, 0.7);
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  vertical-align: middle;
+  border-color: #5a5a5a;
+  border-collapse: collapse;
+}
+
+.table img {
+  max-width: 50px;
+  height: auto;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #5a5a5a;
+}
+
+.table th {
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
+  .table-container {
+      padding: 12px;
+  }
+  
+  .table {
+      font-size: 14px;
+  }
+  
+  .table img {
+      max-width: 40px;
+  }
 }

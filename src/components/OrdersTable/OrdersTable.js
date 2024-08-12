@@ -1,5 +1,5 @@
 import React from "react";
-import avatar from "./../../assets/avatar.jpg"
+import avatar from "./../../assets/avatar.jpg";
 import "./OrdersTable.css";
 import Tagline from "../ui/Tagline";
 import { orders } from "../../Util/Orders";
@@ -19,7 +19,7 @@ const OrdersTable = () => {
         <tbody>
           {orders.map((x) => {
             return (
-              <tr>
+              <tr key={x.orderno}>
                 <td>
                   <div className="d-flex align-items-center">
                     <img

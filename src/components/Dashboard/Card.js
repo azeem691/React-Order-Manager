@@ -14,7 +14,7 @@ const Card = ({ color, bg, title, value, result }) => {
       style={{
         backgroundColor: Theme.secondaryColor,
         color: "white",
-        flex: 1,
+        flex: "1 1 200px",
       }}
     >
       <div className="RecatngleIcon" style={{ backgroundColor: bg }}>

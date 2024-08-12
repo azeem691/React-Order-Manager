@@ -1,17 +1,18 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #181a1b;
-}
-
-.app-container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh; 
-}
 
 .content-container {
-    display: flex;
-    flex: 1;
-    overflow: hidden; 
+  overflow-y: auto;
+  flex: 1; 
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

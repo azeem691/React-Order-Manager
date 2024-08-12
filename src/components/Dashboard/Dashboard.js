@@ -1,31 +1,23 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCaretUp,
-  faCaretRight,
-  faBowlFood,
-  faBurger,
-  faBowlRice,
-} from "@fortawesome/free-solid-svg-icons";
+
 import "react-circular-progressbar/dist/styles.css";
 import Theme from "../../Util/theme";
-import Card from "./Card";
-import ProgressCircular from "./../ui/ProgressCircular";
-import RoundedIcon from "../ui/RoundedIcon";
 import CustomBarChart from "../ui/CustomBarChart";
 import OrdersTable from "../OrdersTable/OrdersTable";
 import Feedback from "../Feedback/Feedback";
 import NetProfit from "./NetProfit";
 import GoalsSection from "./GoalsSection";
 import "./Dashboard.css";
+import Card from "./Card";
 
 const Dashboard = () => {
   const percentage = 70;
+
   return (
-    <div className="container-fluid dashboard-container">
+    <div className="container-fluid dashboard-container" style={{ backgroundColor: Theme.primaryColor}}>
       <h3 className="text-white fw-bold">Dashboard</h3>
-      <div className="row my-4">
-        <div className="col-lg-8">
-          <div className="d-flex justify-content-between gap-4">
+      <div className="row my-3 g-4">
+        <div className="col-lg-8 col-12">
+          <div className="d-flex flex-wrap justify-content-between gap-4">
             <Card
               color="#3e62fe"
               bg="#2a3268"
@@ -56,11 +48,11 @@ const Dashboard = () => {
             />
           </div>
         </div>
-        <div className="col-lg-4">
+        <div className="col-lg-4 col-12">
           <NetProfit percentage={percentage} />
         </div>
       </div>
-      <div className="row my-2">
+      <div className="row my-4">
         <div className="col-lg-8">
           <CustomBarChart />
         </div>
@@ -68,7 +60,7 @@ const Dashboard = () => {
           <GoalsSection />
         </div>
       </div>
-      <div className="row my-5">
+      <div className="row my-4">
         <div className="col-lg-8">
           <OrdersTable />
         </div>

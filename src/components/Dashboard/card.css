@@ -1,8 +1,15 @@
-.RecatngleIcon {
+.card {
+    padding: 16px;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+  
+  .RecatngleIcon {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
     border-radius: 4px;
-}
+  }
+  
